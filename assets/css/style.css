@@ -7,48 +7,63 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    padding: 3%;
     background-color: var(--myLtBlue);
-    border: black 5px solid;
+    /* border: black 5px solid; */
 }
 
 header {
     border: black 5px solid;
     position: relative;
-    height: 30%;
     background-color: var(--myDkBlue);
-    height: 300px;
+    background-image: url("../images/header_image.png");
+    background-repeat: no-repeat;
+    height: 245px;
 }
 
 h1 {
-    font-size: 3em;
-    color: var(--myDkBlue);
-    width: 410px;
     background-color: var(--myLtBlue);
-    margin: 0%;
-    text-align: right;
-    padding-right: 10px;
-}
+    color: var(--myDkBlue);
+    font-size: 2.5em;
+    width: fit-content;
 
-img {
-    width: 100%;
+    margin: 0%;
+    padding: 0 10px;
 }
 
 header nav {
-    text-align: right;
     position: absolute;
     right: 0;
     top: 0;
+    text-align: right;
 }
 
 header li {
-    border-bottom: solid;
-    display: inline;
     color: var(--myLtBlue); 
+    border-bottom: solid;
     font-size: 1.5em;
+    display: inline;
     margin: 15px;
-
 }
+
+.subtitle {
+    background-color: var(--myLtBlue);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 20px;
+    padding: 10px 30px;
+}
+
+.burger-nav {
+    width: 50px;
+    height: 50px;
+}
+
+.burger-nav:hover {
+    cursor: pointer;
+}
+
+
 
 
 
@@ -80,33 +95,41 @@ article {
     width: 70%;
 }
 
-.mainProject { 
-    background-image: url("../images/placeholder_640x430.png");
-    width: 700px;
-    height: 500px;
+/* .mainProject { 
+    background-image: url("../images/horizon.png");
 }
 
 .projectBox {
     border: solid var(--myDkBlue) 5px;
     background-image: url("../images/placeholder_320x215.png");
     color: var(--myDkBlue);
-    width: 320px;
-    height: 215px;
+} */
+
+#summary {
+    color: var(--myDkBlue);
+    line-height: 2;
+    width: 90%;
+    padding: 20px;
+}
+
+section {
+    padding: 20px;
+}
+
+section img {
+    border: 7px solid var(--myDkBlue);
+    border-radius: 10px;
 }
 
 div.labelContainer {
-    border: solid black 1px;
     background-color: var(--myLtBlue);
+    border: 7px solid var(--myDkBlue);
+    border-radius: 10px;
     width: fit-content;
-    padding: 5px;
-}
-
-div.projectLabel {
-}
-
-p.projectDetails {
-    /* font-size: 1em; */
-
+    padding: 10px;
+    position: relative;
+    bottom: 220px;
+    line-height: .5;
 }
 
 
@@ -129,6 +152,16 @@ footer li {
     margin-right: 25px;
 }
 
+/* media queries */
+@media screen and (max-width: 830px) {
+    #headerNav {
+        display: block;
+    }
 
+    main nav {
+        display: none;
+    }
+    
+}
 
 
