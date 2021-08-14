@@ -11,10 +11,41 @@ body {
     position: relative;
 }
 
+
+
 header {
     background-color: pink;
     height: 225px;
+    /* position: relative; */
 }
+
+header div {
+    display: flex;
+    justify-content: space-between;
+}
+
+header h2 {
+    text-align: right;
+}
+
+header nav {
+    width: fit-content;
+    /* position: relative;
+    top: 200px;
+    right: 0px; */
+}
+
+header li {
+    color: var(--myLtBlue); 
+    border-bottom: solid;
+    font-size: 1.5em;
+    display: inline;
+    margin: 15px;
+}
+
+
+
+
 
 .flex-container {
     display: flex;
@@ -48,8 +79,12 @@ aside {
     background-color: lightgreen;
     height: 100px;
     width: 300px;
-
+    margin: auto;
 }
+
+
+
+
 
 footer {
     background-color: pink;
@@ -60,6 +95,14 @@ footer li {
 
 }
 
+
+/* media queries */
+@media screen and (max-width: 830px) {
+   .smallProjectsContainer {
+       display: block;
+   }
+    
+}
 
 
 
