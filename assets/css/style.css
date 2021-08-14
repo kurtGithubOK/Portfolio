@@ -8,160 +8,53 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--myLtBlue);
-    /* border: black 5px solid; */
+    position: relative;
 }
 
 header {
-    border: black 5px solid;
-    position: relative;
-    background-color: var(--myDkBlue);
-    background-image: url("../images/header_image.png");
-    background-repeat: no-repeat;
-    height: 245px;
+    background-color: pink;
+    height: 225px;
 }
 
-h1 {
-    background-color: var(--myLtBlue);
-    color: var(--myDkBlue);
-    font-size: 2.5em;
-    width: fit-content;
-
-    margin: 0%;
-    padding: 0 10px;
+nav.leftNav {
+    background-color: lightblue;
+    width: 30%;
+    height: 900px;
 }
-
-header nav {
-    position: absolute;
-    right: 0;
-    top: 0;
-    text-align: right;
-}
-
-header li {
-    color: var(--myLtBlue); 
-    border-bottom: solid;
-    font-size: 1.5em;
-    display: inline;
-    margin: 15px;
-}
-
-.subtitle {
-    background-color: var(--myLtBlue);
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin-right: 20px;
-    padding: 10px 30px;
-}
-
-.burger-nav {
-    width: 50px;
-    height: 50px;
-}
-
-.burger-nav:hover {
-    cursor: pointer;
-}
-
-
-
-
-
-
 
 main {
-    border: black 5px solid;
-    position: relative;
+    border: black 1px solid;
+    /* height: 500px; */
+    width: 70%;
 }
-
-main nav {
-    border: black 5px solid;
-    width: 25%;
-    height: 808px;
-}
-nav.leftColumn ul {
-    list-style-type: none;
-    font-size: 3em;
-}
-
 
 
 
 article {
-    border: solid orange 1px;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    width: 70%;
-}
-
-/* .mainProject { 
-    background-image: url("../images/horizon.png");
-}
-
-.projectBox {
-    border: solid var(--myDkBlue) 5px;
-    background-image: url("../images/placeholder_320x215.png");
-    color: var(--myDkBlue);
-} */
-
-#summary {
-    color: var(--myDkBlue);
-    line-height: 2;
-    width: 90%;
-    padding: 20px;
+    background-color: pink;
+    height: 100px;
 }
 
 section {
-    padding: 20px;
+    background-color: rgb(81, 231, 186);
+    height: 600px;
+    width: 600px;
 }
 
-section img {
-    border: 7px solid var(--myDkBlue);
-    border-radius: 10px;
+aside {
+    border: 1px black solid;
+    background-color: lightgreen;
+    height: 100px;
+    width: 300px;
+
 }
-
-div.labelContainer {
-    background-color: var(--myLtBlue);
-    border: 7px solid var(--myDkBlue);
-    border-radius: 10px;
-    width: fit-content;
-    padding: 10px;
-    position: relative;
-    bottom: 220px;
-    line-height: .5;
-}
-
-
-
-
-
-
-
 
 footer {
-    border: black 5px solid;
-    text-align: right;
+    background-color: pink;
 }
 
 footer li {
-    border-bottom: solid;
     display: inline;
-    color: var(--myDkBlue);
-    font-size: 1.25em;
-    margin-right: 25px;
+
 }
-
-/* media queries */
-@media screen and (max-width: 830px) {
-    #headerNav {
-        display: block;
-    }
-
-    main nav {
-        display: none;
-    }
-    
-}
-
 
