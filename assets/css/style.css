@@ -12,6 +12,15 @@ body {
     position: relative;
 }
 
+header a:link, header a:visited {
+    color: var(--myLtBlue);
+}
+header a:visited {
+    color: var(--myWhite);
+}
+header a:hover {
+    color: var(--myWhite);
+}
 
 /* Header styles */
 header {
@@ -90,7 +99,7 @@ main {
     flex: 70%;
 }
 
-
+/* About Me part */
 article {
     padding: 5%;
     color: var(--myDkBlue);
@@ -109,12 +118,14 @@ article img {
     margin-right: 10px;
 }
 
+/* Large Project */
 section {
     margin: auto;
     width: 89%;
     background-color: var(--myLtBlue);
     border: 7px solid var(--myDkBlue);
-
+    display: flex;
+    flex-direction: column;
 }
 
 section img {
@@ -128,11 +139,12 @@ section div {
     border-radius: 10px;
     width: fit-content;
     padding: 10px;
-    position: relative;
-    bottom: 220px;
+    /* position: relative;
+    bottom: 220px; */
     line-height: .5;
 }
 
+/* Small Projects */
 aside {
     margin: auto;
     padding: 0px 40px;
