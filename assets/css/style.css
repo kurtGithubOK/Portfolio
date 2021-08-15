@@ -1,3 +1,4 @@
+/* Global settings */
 :root {
     --myDkBlue: #555b6e;
     --myWhite: #faf9f9;
@@ -12,10 +13,9 @@ body {
 }
 
 
-
+/* Header styles */
 header {
     background-color: var(--myDkBlue);
-    /* height: 225px; */
 }
 
 header div {
@@ -57,7 +57,7 @@ header li {
 
 
 
-
+/* Flex used to put left margin and projects side by side. */
 .flex-container {
     display: flex;
     justify-content: space-between;
@@ -111,9 +111,7 @@ article img {
 }
 
 section {
-    /* background-color: rgb(81, 231, 186); */
     margin: auto;
-    /* height: 600px; */
     width: 89%;
     background-color: var(--myLtBlue);
     border: 7px solid var(--myDkBlue);
@@ -137,8 +135,6 @@ section div {
 }
 
 aside {
-    /* border: 1px black solid; */
-    /* background-color: lightgreen; */
     margin: auto;
     padding: 0px 40px;
 }
@@ -157,6 +153,7 @@ aside div {
     line-height: .5;
 }
 
+/* Label container for text placed in middle of project image. */
 .labelContainer {
     background-color: var(--myLtBlue);
     border: 7px solid var(--myDkBlue);
