@@ -19,7 +19,8 @@ header a:visited {
     color: var(--myWhite);
 }
 header a:hover {
-    color: var(--myWhite);
+    color: var(--myDkBlue);
+    background-color: var(--myWhite);
 }
 
 /* Header styles */
@@ -126,6 +127,7 @@ section {
     border: 7px solid var(--myDkBlue);
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 section img {
@@ -192,7 +194,7 @@ footer li {
     border-bottom: solid;
     display: inline;
     color: var(--myDkBlue);
-    font-size: 1.25em;
+    font-size: 1.5em;
     margin-right: 25px;
 }
 
