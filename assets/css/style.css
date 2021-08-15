@@ -16,12 +16,15 @@ body {
 header {
     background-color: pink;
     height: 225px;
-    /* position: relative; */
 }
 
 header div {
     display: flex;
     justify-content: space-between;
+}
+
+header h1 {
+    margin-bottom: 0px;
 }
 
 header h2 {
@@ -30,16 +33,17 @@ header h2 {
 
 header nav {
     width: fit-content;
-    /* position: relative;
-    top: 200px;
-    right: 0px; */
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
 }
 
 header li {
     color: var(--myLtBlue); 
     border-bottom: solid;
     font-size: 1.5em;
-    display: inline;
     margin: 15px;
 }
 
@@ -53,13 +57,13 @@ header li {
 
 nav.leftNav {
     background-color: lightblue;
-    width: 30%;
+    flex: 30%;
     height: 900px;
 }
 
 main {
     border: black 1px solid;
-    width: 70%;
+    flex: 70%;
 }
 
 
@@ -98,11 +102,30 @@ footer li {
 
 
 /* media queries */
-@media screen and (max-width: 830px) {
-   .smallProjectsContainer {
-       display: block;
-   }
-    
+@media screen and (max-width: 800px) {
+    /* Change from 2-column layout to 1-column for mobile. */
+    .smallProjectsContainer {
+        display: block;
+    }
+
+    header li {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        list-style-type: none;
+        font-size: 1.5em;
+        margin: 15px;
+    }
+
+    /* Don't display sub-title or left margin nav on mobile. */
+    header h2 {
+        display: none;
+    }
+
+    nav.leftNav {
+        display: none;
+    }
 }
 
 
