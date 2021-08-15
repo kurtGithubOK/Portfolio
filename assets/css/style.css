@@ -73,15 +73,15 @@ nav.leftNav {
     padding-right: 3%;
 }
 
-#aboutMe {
+.aboutMe {
     margin-top: 25px;
 }
 
-#work {
-    margin-top: 180px;
+.work {
+    margin-top: 260px;
 }
 
-#contactMe {
+.contactMe {
     margin-top: 950px;
 }
 
@@ -137,16 +137,30 @@ section div {
 }
 
 aside {
-    border: 1px black solid;
+    /* border: 1px black solid; */
     /* background-color: lightgreen; */
     margin: auto;
     padding: 0px 40px;
 }
 
+aside img {
+    width: 95%;
+}
+aside div {
+    background-color: var(--myLtBlue);
+    border: 7px solid var(--myDkBlue);
+    border-radius: 10px;
+    width: fit-content;
+    padding: 10px;
+    position: relative;
+    bottom: 125px;
+    line-height: .5;
+}
+
 .labelContainer {
     background-color: var(--myLtBlue);
     border: 7px solid var(--myDkBlue);
-    width: 97%;
+    width: 50%;
     position: relative;
 }
 
@@ -154,6 +168,10 @@ aside {
     height: 160px;
 }
 
+/* Bottom borders are duplicate with anchor link underlines. */
+a {
+    text-decoration: none;
+}
 
 
 
