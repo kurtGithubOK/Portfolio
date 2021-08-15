@@ -14,7 +14,7 @@ body {
 
 
 header {
-    background-color: pink;
+    background-color: var(--myDkBlue);
     /* height: 225px; */
 }
 
@@ -24,11 +24,21 @@ header div {
 }
 
 header h1 {
+    background-color: var(--myLtBlue);
     margin-bottom: 0px;
+    color: var(--myDkBlue);
+    font-size: 2.5em;
+    width: fit-content;
+    padding: 10px 20px;
 }
 
 header h2 {
     text-align: right;
+    background-color: var(--myLtBlue);
+    width: fit-content;
+    margin-left: auto;
+    color: var(--myDkBlue);
+    padding: 10px;
 }
 
 header ul {
@@ -89,28 +99,29 @@ aside {
 
 
 footer {
-    background-color: pink;
+    display: flex;
 }
 
 footer li {
+    border-bottom: solid;
     display: inline;
-
+    color: var(--myDkBlue);
+    font-size: 1.25em;
+    margin-right: 25px;
 }
 
 
+
 /* media queries */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 880px) {
     /* Change from 2-column layout to 1-column for mobile. */
     .smallProjectsContainer {
         display: block;
     }
 
+    /* Change header nav from row to column. */
     header div {
         flex-direction: column;
-        /* width: 100%;
-        list-style-type: none;
-        font-size: 1.5em;
-        margin: 15px; */
     }
 
     header ul {
