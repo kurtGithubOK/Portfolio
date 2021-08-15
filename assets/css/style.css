@@ -98,6 +98,13 @@ article {
     text-align: justify;
 }
 
+article p {
+    background-color: var(--myLtBlue);
+    border: 7px solid var(--myDkBlue);
+    padding: 10px;
+    height: 130px;
+}
+
 article img {
     float: left;
     margin-right: 10px;
@@ -107,7 +114,10 @@ section {
     /* background-color: rgb(81, 231, 186); */
     margin: auto;
     /* height: 600px; */
-    width: 90%;
+    width: 89%;
+    background-color: var(--myLtBlue);
+    border: 7px solid var(--myDkBlue);
+
 }
 
 section img {
@@ -128,10 +138,20 @@ section div {
 
 aside {
     border: 1px black solid;
-    background-color: lightgreen;
-    height: 100px;
-    width: 300px;
+    /* background-color: lightgreen; */
     margin: auto;
+    padding: 0px 40px;
+}
+
+.labelContainer {
+    background-color: var(--myLtBlue);
+    border: 7px solid var(--myDkBlue);
+    width: 97%;
+    position: relative;
+}
+
+.labelContainer img {
+    height: 160px;
 }
 
 
