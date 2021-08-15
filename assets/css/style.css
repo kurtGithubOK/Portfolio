@@ -102,7 +102,6 @@ article p {
     background-color: var(--myLtBlue);
     border: 7px solid var(--myDkBlue);
     padding: 10px;
-    height: 130px;
 }
 
 article img {
